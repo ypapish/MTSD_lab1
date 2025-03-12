@@ -17,4 +17,5 @@ def interactive_mode():
         return
     b = get_numbers("b = ")
     c = get_numbers("c = ")
+    print(f"Equation is:{a}x^2 + {b}x + {c} = 0")
     calculate_roots(a, b, c)
