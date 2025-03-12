@@ -9,3 +9,11 @@ def get_numbers(prompt):
         except ValueError:
             print(f"Error: expected a valid real number, got {value} instead")
 
+
+def interactive_mode():
+    a = get_numbers("a = ")
+    if a == 0:
+        raise ValueError("Error: a can't be 0")
+    b = get_numbers("b = ")
+    c = get_numbers("c = ")
+    calculate_roots(a, b, c)
