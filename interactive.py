@@ -13,7 +13,8 @@ def get_numbers(prompt):
 def interactive_mode():
     a = get_numbers("a = ")
     if a == 0:
-        raise ValueError("Error: a can't be 0")
+        print("Error: a can't be 0")
+        return
     b = get_numbers("b = ")
     c = get_numbers("c = ")
     calculate_roots(a, b, c)
