@@ -19,7 +19,7 @@ def read_coefficients(filename):
         print("Error: invalid file format")
         sys.exit(1)
     if a == 0:
-        print("Error: a cannot be 0")
+        print("Error: a can't be 0")
         sys.exit(1)
     return a, b, c
 
