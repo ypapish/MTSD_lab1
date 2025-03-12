@@ -22,3 +22,10 @@ def read_coefficients(filename):
         print("Error: a cannot be 0")
         sys.exit(1)
     return a, b, c
+
+
+def noninteractive_mode():
+    filename = sys.argv[1]
+    a, b, c = read_coefficients(filename)
+    print(f"Equation is: ({a}) x^2 + ({b}) x + ({c}) = 0")
+    calculate_roots(a, b, c)
