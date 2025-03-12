@@ -47,13 +47,7 @@ python main.py /path/to/example.txt
 
 ## File format for non-interactive mode
 
-The file must contain three numbers separated by spaces:
-
-```
-a b c
-```
-
-For example:
+The file must contain three numbers separated by spaces for example:
 
 ```
 1 2 -3
